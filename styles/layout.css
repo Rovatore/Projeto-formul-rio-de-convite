@@ -1,0 +1,45 @@
+#app {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100vh;
+}
+aside {
+  img {
+    width: 400px;
+    height: 728px;
+    margin: 20px 20px;
+    border-radius: 12px;
+  }
+}
+main {
+  overflow: auto;
+ background-color: var(--shape-body);
+    display: flex;
+    flex-direction: column;
+  
+    #header{
+
+      justify-content: flex-start;
+      margin: 80px 130px;
+    }
+        .about-event{
+          
+          display: flex;
+          justify-content:  flex-start;
+          align-items: center;
+          gap: 12px;
+        }
+    .main-1 {
+        display: flex;
+        flex-direction: column;
+          width: 560px;
+        margin: 40px 130px 48px 130px;
+        fieldset{
+          all: unset;
+        }
+
+     
+     }
+
+    
+}

@@ -2,20 +2,52 @@
 <html lang="pt-br">
 <head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
   <title>Formulário de Convite</title>
-
-  <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
 
 </head>
 <body>
-  
+  <div id="app">  
+<aside>
+  <img src="./assets/Brand.jpg" alt="">
+</aside>
+<main>
+    <div id="header">
+      <p id="heading">Crie seu convite</p>
+    </div>
+  <div class="main-1">
+    <div class="about-event">
+      <img src="./assets/icons/calendar.svg" alt="">
+    <span id="header-sm">Sobre o evento</span>
+    </div>
+    <form>
+      <fieldset>
+        <div class="input">
+        <legend id="text-label">Titulo
+        <input type="text" name="title" id="input-text-fill" placeholder="Nome do Evento"></legend>
+      </div>
+        
+          <div class="input-sm">
+            <legend id="text-label">Inicio
+        <input type="date" name="date-1" id="input-text"></legend>
+      
+          
+            <legend id="text-label">Fim
+        <input type="date" name="date-1" id="input-text"></legend>
+      </div>
+      
+
+      </fieldset>
+    </form>
+  </div>
+  </div>
+</main>
 </body>
 </html>

@@ -1,6 +1,8 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  
 }
 
 :root {
@@ -33,20 +35,22 @@
     --text-body: #c8cdd0;
     --text-heading: #f9f9f9;
   /*Fontes*/
-  --baloo-2: "Baloo 2", serif; 
-  --leckerli-one: "Leckerli One", serif;
-  --open-sans: "Open Sans", sans-serif;
+  --font-baloo: "Baloo 2", sans-serif;
+  --font-open-sans: "Open Sans", serif;
+  --font-lickerli: "Leckerli One", serif;
 
   /*Tipografia*/
-  --logo: 40px/auto/400 var(--leckerli-one);
+  --logo: 400 40px  var(--font-lickerli);
   
-  --heading-md: 28px/auto/700 var(--baloo-2);
+  --heading-md: 700  28px var(--font-baloo); 
 
-  --heading-sm: 18/auto/700 var(--baloo-2);
+  --heading-sm: 700 18px  var(--font-baloo);
 
-  --body-md: 16px/auto/400/600 var(--open-sans);
+  --body-md:  400 16px  var(--font-open-sans);
 
-  --body-sm: 14px/auto/400/600 var(--open-sans);
+  --body-sm:  400 14px  var(--font-open-sans);
 
-  --body-xs: 12px/auto/400/600 var(--open-sans);
+  --body-xs: 400 12px  var(--font-open-sans);
+
+  background: var(--shape-background);
 }
