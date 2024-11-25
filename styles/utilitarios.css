@@ -1,3 +1,5 @@
+
+/*Textos*/
 #header {
   color: var(--text-heading);
    font: var(--heading-md);
@@ -13,7 +15,7 @@
           }
           #input-text-fill {
             display: flex;
-            width: 530px;
+            width: 560px;
             margin-top: 16px;
             border: 1px solid var(--input-stroke);
             background-color: var(--input-base);
@@ -39,10 +41,7 @@
            height: 48px;
            margin-bottom: 16px;
           }
-
-
-
-  
+          /*Containers*/
      .input{
            display: flex;
            width: 100%;
@@ -61,8 +60,7 @@
               opacity: 0;
              }
 
-            display: flex;
-            
+            display: flex;   
             justify-content: center;
             align-items: center;
             width: 250px; 
@@ -77,5 +75,75 @@
           }
         }
             
+        .select-container{           
+            display: flex;
+            width: 250px; 
+            border: 1px solid var(--input-stroke);
+            background-color: var(--input-base);
+            font: var(--body-md);
+            color: var(--input-placeholder);
+            border-radius: 8px;
           
+           height: 48px;
+           margin-top: 16px;
+          gap: 8px;
+          padding: 4px 4px;
+           #select{
+              border-style: hidden;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+             width: 100%;
+              gap: 8px;
+              padding: 4px 4px;
+              border-radius: 4px;
+              background-color: var(--input-base);
+              
+              #select-img{
+                width: 16px;
+                height: 16px;
+              }
+             
+              &:hover,
+              &:focus 
+              {
+                background-color: var(--shape-hover);
+                  outline: 0;
+                  p{
+                    font: var(--body-sm);
+                    color: var(--text-heading);
+                  }
+                     & svg path {
+                  stroke: var(--brand-light);
+    }
+              }
+           }
+        }
+      #input-description{       
+            text-align: left;
+            border: initial;
+            overflow: hidden;
+            width: 560px;
+            margin-top: 16px;
+            border: 1px solid var(--input-stroke);
+            background-color: var(--input-base);
+            color: var(--input-placeholder);
+            font: var(--body-md);
+            border-radius: 8px;
+           gap: 8px;
+           padding: 16px 2px 98px 16px;
+
+           margin-bottom: 16px;
+          }
+            /*Containers-End*/
+            /*HOVERS*/
             
+        #input-text-fill:hover{
+         border: 1px solid var(--brand-light);
+        }
+        #input-text:hover{
+          border: 1px solid var(--brand-light);
+        }
+         
+              
+      

@@ -12,7 +12,7 @@ aside {
   }
 }
 main {
-  overflow: auto;
+  overflow: 1 ;
  background-color: var(--shape-body);
     display: flex;
     flex-direction: column;
