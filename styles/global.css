@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- outline: 0;
+  outline: 0;
 }
 
 
@@ -11,7 +11,8 @@
     --brand-light: #59b2ff;
     --brand-mid: #3487cf;
     --brand-dark: #1d6fb6;
-  
+    
+    --accent-brand: var(--brand-light);
     --accent-purple: #b259ff;
     --accent-fuschia: #ff59f9;
     --accent-pink: #ff598b;

@@ -1,3 +1,12 @@
+  /*Layout*/
+   .header-style{      
+          display: flex;
+          justify-content:  center;
+          align-items: center;
+          gap: 12px;
+          width: fit-content;
+         margin-bottom: 24px;
+        }
 
 /*Textos*/
 #header {
@@ -52,8 +61,8 @@
           .input-sm{
               display: flex;
               
-              justify-content: space-between;
-              gap: 8px;
+             
+              gap: 16px;
 
           #input-text {
                &::-webkit-calendar-picker-indicator {
@@ -63,7 +72,7 @@
             display: flex;   
             justify-content: center;
             align-items: center;
-            width: 250px; 
+            width: 272px; 
             border: 1px solid var(--input-stroke);
             background-color: var(--input-base);
             font: var(--body-md);
@@ -77,12 +86,12 @@
             
         .select-container{           
             display: flex;
-            width: 250px; 
+            width: 272px; 
             border: 1px solid var(--input-stroke);
             background-color: var(--input-base);
             font: var(--body-md);
             color: var(--input-placeholder);
-            border-radius: 8px;
+              border-radius: 8px;
           
            height: 48px;
            margin-top: 16px;
@@ -103,9 +112,9 @@
                 width: 16px;
                 height: 16px;
               }
-             
+              
               &:hover,
-              &:focus 
+              &:focus
               {
                 background-color: var(--shape-hover);
                   outline: 0;
@@ -119,6 +128,7 @@
               }
            }
         }
+       
       #input-description{       
             text-align: left;
             border: initial;
@@ -133,7 +143,7 @@
            gap: 8px;
            padding: 16px 2px 98px 16px;
 
-           margin-bottom: 16px;
+           margin-bottom: 48px;
           }
             /*Containers-End*/
             /*HOVERS*/
