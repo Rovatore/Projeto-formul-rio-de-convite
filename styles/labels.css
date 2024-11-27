@@ -1,0 +1,123 @@
+.container-switch{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.label{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.checkbox-card {
+  display: none;
+  border: 1px solid;
+}
+
+.checkbox-card + label {
+  display: inline-block;
+  width: 134px;
+  height: 103px;
+  
+  border: 8px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--shape-button);
+  border: 0.1rem  solid var(--input-stroke); 
+  padding: 4px 4px 8px 4px; 
+}
+
+.checkbox-card + label img {
+  width: 126px;
+  height: 64px;
+  border-radius: 4px;
+}
+
+.checkbox-card + label .card-title {
+  font: var(--body-sm);
+  color: var(--text-heading);
+  margin: 8px 4px;
+}
+
+.checkbox-card:checked + label {
+  outline: 2px solid var(--brand-light);
+}
+
+
+/*Switch*/
+
+.switch-container{
+  margin-top: 12px;
+  display: flex;
+  width: 64px;
+  height: 32px;
+  align-items: center;
+  border: 2px solid var(--input-stroke);
+  padding-top: 10px;
+  padding-left: 4px;
+  
+  border-radius: 999px;
+  background-color: var(--input-base);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--input-stroke);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before{
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: var(--input-stroke);
+  transition: .4s;
+  border-radius: 50%;
+}
+
+
+
+input:checked + .slider:before{
+  transform: translateX(29px);
+  background-color: var(--text-heading);
+}
+
+.mode-text {
+  display: inline-block;
+  content: "";
+  font: var(--body-sm);
+  color: var(--text-heading);
+  margin-top: 10px;
+}
+.mode-text::before{
+  content: "Escuro";
+  transition: ease-in;
+}
+.switch-container:has(input:checked) + .mode-text::before{
+  content: "Claro";
+}
+
+.switch-container:has(input:checked) {
+  background-color: var(--brand-light);
+}
