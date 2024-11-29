@@ -1,31 +1,29 @@
-.container-switch{
+.labels-container{
+  
+  width: fit-content;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 16px;
 }
+
 .label{
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  width: fit-content;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 16px;
   gap: 8px;
   margin-bottom: 28px;
 }
 
 .checkbox-card {
   display: none;
-  border: 1px solid;
 }
 
 .checkbox-card + label {
-  display: inline-block;
   width: 134px;
   height: 103px;
-  
-  border: 8px;
   border-radius: 8px;
   text-align: center;
   cursor: pointer;
@@ -52,9 +50,22 @@
 
 
 /*Switch*/
-
+ .outros-container{
+      
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .full-switch{
+      display: flex;
+      border: 1px solid;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
 .switch-container{
-  margin-top: 12px;
   display: flex;
   width: 64px;
   height: 32px;
@@ -62,15 +73,12 @@
   border: 2px solid var(--input-stroke);
   padding-top: 10px;
   padding-left: 4px;
-  
   border-radius: 999px;
   background-color: var(--input-base);
   transition: background-color 0.5s, color 0.5s;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
+.switch {  
   width: 60px;
   height: 34px;
 }
@@ -79,7 +87,6 @@
   display: none;
 }
 .slider {
-  position: absolute;
   cursor: pointer;
   background-color: var(--input-stroke);
   transition: .4s;
@@ -108,7 +115,7 @@ input:checked + .slider:before{
   content: "";
   font: var(--body-sm);
   color: var(--text-heading);
-  margin-top: 10px;
+  min-width: 50px;
 }
 .mode-text::before{
   content: "Escuro";
@@ -121,3 +128,42 @@ input:checked + .slider:before{
 .switch-container:has(input:checked) {
   background-color: var(--brand-light);
 }
+   .upload-container{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .upload{
+          display: flex;
+          align-items: center;
+          margin-top: 12px;
+          text-align: center;
+          width: fit-content;
+          gap: 12px;
+      .upload-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: none;
+        width: 119px;
+        height: 40px;
+        background-color: var(--shape-button);
+        border-radius: 8px;
+       
+        
+        
+        span{
+          font: var(--body-md);
+          color: var(--text-heading);
+
+        }
+      }
+      span{
+        font: var(--body-md);
+        color: var(--input-placeholder);
+        
+      }
+    }
