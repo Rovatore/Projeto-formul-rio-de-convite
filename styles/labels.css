@@ -55,11 +55,12 @@
       width: fit-content;
       display: flex;
       align-items: center;
+      
       gap: 12px;
+      
     }
     .full-switch{
       display: flex;
-      border: 1px solid;
       justify-content: center;
       align-items: center;
       gap: 12px;
@@ -116,6 +117,7 @@ input:checked + .slider:before{
   font: var(--body-sm);
   color: var(--text-heading);
   min-width: 50px;
+  margin-right: 60px;
 }
 .mode-text::before{
   content: "Escuro";
