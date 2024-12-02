@@ -1,0 +1,81 @@
+.contact-container{
+  border-bottom: 1px solid var(--input-stroke);
+  margin-bottom: 48px;
+}
+
+.contact-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+     
+/*Termos e condições*/
+.terms-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-checkbox{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font: 22px;
+}
+
+.custom-checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.custom-checkbox .checkmark{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.custom-checkbox input:checked + .checkmark{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../assets/icons/check-box-checked.svg) no-repeat center;
+  background-size: 16px 16px;
+  outline: 1px solid var(--brand-light);
+}
+.term-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 48px;
+}
+.term-btn button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 4px 20px;
+  border-radius: 8px;
+  background-color: var(--brand-dark);
+  border: none;
+  img{
+    width: 20px;
+  }
+
+  span{
+    font: var(--body-sm);
+    color: var(--text-heading);
+  }
+}

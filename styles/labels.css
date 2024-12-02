@@ -1,17 +1,13 @@
 .labels-container{
-  
-  width: fit-content;
   display: flex;
-  justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
   align-items: flex-start;
-  flex-direction: column;
   margin-top: 16px;
 }
 
 .label{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 28px;
@@ -29,7 +25,7 @@
   cursor: pointer;
   background-color: var(--shape-button);
   border: 0.1rem  solid var(--input-stroke); 
-  padding: 4px 4px 8px 4px; 
+  padding: 4px 4px 8px 2px; 
 }
 
 .checkbox-card + label img {
@@ -50,8 +46,9 @@
 
 
 /*Switch*/
+
  .outros-container{
-      
+      margin-bottom: 48px;
       width: fit-content;
       display: flex;
       align-items: center;

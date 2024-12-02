@@ -3,6 +3,15 @@
   grid-template-columns: 25% 75%;
   height: 100vh;
 }
+
+.site{
+  width: fit-content;
+  background-color: var(--shape-body);
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
 aside {
   img {
     width: 400px;
@@ -12,8 +21,9 @@ aside {
   }
 }
 main {
+
   overflow: 0 ;
-    background-color: var(--shape-body);
+    background-color: var(--shape-background);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -27,6 +37,7 @@ main {
         flex-direction: column;
           width: 560px;
         margin: 40px 130px 48px 130px;
+        
         fieldset{
           all: unset;
         }

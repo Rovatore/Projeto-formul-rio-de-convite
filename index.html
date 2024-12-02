@@ -19,6 +19,7 @@
   <img src="./assets/Brand.jpg" alt="">
 </aside>
 <main>
+  <div class="site">
     <div id="header">
       <p id="heading">Crie seu convite</p>
     </div>
@@ -74,6 +75,7 @@
           <textarea name="" id="input-description" cols="30" rows="1" required placeholder="Escreva sobre os detalhes do evento"></textarea>
        </legend>
       </div>
+      
 
             <div class="header-style">
      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,10 +244,65 @@
             <span>Nenhum arquivo selecionado</span>
         </div>
           </div>
+           </div>
+           <div class="contact-container">
+          <div class="contact-header">
+            <img src="./assets/icons/contact.svg" alt=""><span id="header-sm">Dados para contato</span>
+          </div>
+        <div class="input">
+         <legend id="text-label">Nome
+        <input type="text" name="Nome" id="input-text-fill" placeholder="Nome completo" required></legend>
+      
+        </div>     
+          
+       
+          
+          <div class="input-sm">
+            <legend id="text-label">Inicio
+        <input type="email" name="telefone" id="input-text" required placeholder="exemplo@gmail.com"></legend>
+      
+          
+            <legend id="text-label">Telefone
+        <input type="tel" name="telefone" id="input-text" required placeholder="(99) 99999-9999"></legend>
+      </div>
+
+     
+        </div>
+          <div class="terms-container">
+            <div class="checkbox-container">
+              <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+                <span id="text-label">Li e concordo com os <strong>Termos e Condições </strong>e com a <strong>Política de Privacidade</strong></span>
+              </label>
+
+                <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <span id="text-label">Aceito receber atualizações e promoções por e-mail</span>
+              </label>
+
+                <label class="custom-checkbox">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <span id="text-label">Aceito receber atualizações e promoções por SMS</span>
+              </label>
+            </div>
+            <div class="term-btn">
+              <button>
+                <img src="./assets/icons/ticket.svg" alt="">
+                <span>Gerar convite</span>
+              </button>
+            </div>
+        </div>
+        
       </fieldset>
     </form>
-  </div>
+ 
 </div>
+</div>
+
 </main>
+
 </body>
 </html>

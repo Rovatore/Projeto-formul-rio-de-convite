@@ -7,7 +7,13 @@
           width: fit-content;
          margin-bottom: 24px;
         }
-
+        /*Erro*/
+        :required{
+          outline: 1px solid var(--feedback);
+        }
+        :valid{
+          outline: 0px solid;
+        }
 /*Textos*/
 #header {
   color: var(--text-heading);
@@ -55,7 +61,8 @@
            display: flex;
            width: 100%;
             margin-top: 20px;
-           
+            flex-direction: column;
+            transition: border-color 0.3s, ;
         } 
         /*Input metade metade*/
           .input-sm{
@@ -158,3 +165,11 @@
      #hidden{
       visibility: hidden;
      }
+
+     /*Erro*/
+        .error-icon {
+          content: url(../assets/icons/circle-alert-red.svg);
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
